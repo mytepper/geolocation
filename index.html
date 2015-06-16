@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Geolocation</title>
+</head>
+<body>
+<div ng-controller="geoCtrl">
+ <form>
+	<label>Ip Or Domain</label> 
+    <input name="name" ng-model="address" type="text">
+ 	<input value="Save" ng-click="find()" type="button">
+</form>
+<hr>
+  <p ng-bind="ip"></p>
+  <p ng-bind="hostname"></p>
+  <p ng-bind="country_code"></p>
+  <p ng-bind="country_name"></p>
+  <p ng-bind="region_code"></p>
+  <p ng-bind="region_name"></p>
+  <p ng-bind="city"></p>
+  <p ng-bind="zip_code"></p>
+  <p ng-bind="time_zone"></p>
+  <p ng-bind="latitude"></p>
+  <p ng-bind="longitude"></p>
+  <p ng-bind="metro_code"></p>
+</div>
+<script src="angular.min.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="app/app.js"></script>
+<script src="controller/controller.js"></script>
+<script>
+</script>
+
+
+</body>
+</html>
